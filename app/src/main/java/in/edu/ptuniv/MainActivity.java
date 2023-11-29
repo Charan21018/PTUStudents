@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,36 +20,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button6 = findViewById(R.id.button6);
         Button button7 = findViewById(R.id.button7);
     }
-
-    public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.button:
-                Intent intent = new Intent(MainActivity.this, syllabus.class);
-                startActivity(intent);
-                break;
-            case R.id.button2:
-                Intent intent2 = new Intent(MainActivity.this, notes.class);
-                startActivity(intent2);
-                break;
-            case R.id.button3:
-                Intent intent3 = new Intent(MainActivity.this, previousyearquestionpaper.class);
-                startActivity(intent3);
-                break;
-            case R.id.button4:
-                Intent intent4 = new Intent(MainActivity.this, cgpacalculator.class);
-                startActivity(intent4);
-                break;
-            case R.id.button6:
-                Intent intent6 = new Intent(MainActivity.this, favourites.class);
-                startActivity(intent6);
-                break;
-            case R.id.button7:
-                Intent intent7 = new Intent(MainActivity.this, about.class);
-                startActivity(intent7);
-                break;
-            default:
-                break;
-
-        }
+    public void syll_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, syllabus.class);
+        startActivity(intent);
+    }
+    public void notes_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, notes.class);
+        startActivity(intent);
+    }
+    public void pyq_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, previousyearquestionpaper.class);
+        startActivity(intent);
+    }
+    public void cgpa_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, cgpacalculator.class);
+        startActivity(intent);
+    }
+    public void fav_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, favourites.class);
+        startActivity(intent);
+    }
+    public void about_button(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, about.class);
+        startActivity(intent);
     }
 }
