@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2273FF"
+
+    >
+
+    <!-- Add your About fragment UI components here -->
+    <TextView
+        android:id="@+id/aboutMessageTextView"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="PTU Previous year question papers: \n
+\nThe students must select the semester and the subject to which they want to download the question paper for and the list of question papers according to the year will be displayed to them and they will be able to download it.\n
+\nPTU CGPA Calculator:\n
+\nThe students must select the semester and should enter their grades for all the subjects then their corresponding GPA for all the semesters will be displayed and the overall CGPA will also be displayed."
+        android:textColor="#EFE9E9"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+
+</RelativeLayout>
